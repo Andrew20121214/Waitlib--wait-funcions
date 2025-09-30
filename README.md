@@ -8,7 +8,23 @@ It provides functions for **fixed-duration waits**, **random waits**, and can be
 ## Features
 
 - `wait(seconds)` – Pause the program for a fixed number of seconds.  
-- `wait_random(min_sec, max_sec)` – Pause for a random amount of time between `min_sec` and `max_sec`.  
+- `wait_random(min_sec, max_sec)` – Pause for a random amount of time between `min_sec` and `max_sec`.
+
+
+ Usage
+  from waitlib import wait, wait_random
+
+print("Waiting 2 seconds...")
+wait(2)
+print("Done!")
+
+print("Waiting a random amount between 1-5 seconds...")
+wait_random(1, 5)
+print("Finished!")
+
+
+
+
 
 ---
 
